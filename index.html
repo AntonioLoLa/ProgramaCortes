@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/javascript.js" defer></script>
+    <script src="js/corte.js" defer></script>
+    <title>MAFAC</title>
+</head>
+<body>
+    <div id="layout">
+        <header id="cabecera">
+            <img src="img/MAFAC_simbolo.jpg" id="imagen_simbolo"/>
+            <h2 id="mafac">MAFAC</h2>
+            
+            
+        </header>
+        <section id="principal">
+            <h3 id="seccion">Sección de cortes</h3>
+
+            <p id="cuantas_quieres">Cuántas medidas quieres meter?</p>
+            <input name="nMedidas" id="num_medidas"  min="1"></input>
+            <button type="button" id="confirmar_num" onclick="crearFormulario()">Confirmar</button>
+            
+            <fieldset id="border_formulario">
+                <legend>Medidas</legend>
+                <form id="formularioMedidas">
+                    <div id="formulario_medidas">
+
+                    </div>
+                    <button id="cancel" type="button" name="finalizar_corte" onclick="vaciarFormulario()">Cancelar</button>
+                    <button id="confirm" type="button" name="finalizar_corte" onclick="recuento()">Finalizar</button>
+                </form>
+            </fieldset>
+            <div id="mostrar_aviso_barras">
+
+            </div>
+            <div id="mostrar_numero_barras">
+
+            </div>
+        </section>
+        <aside id="imagen-derecha">
+            <img id="fondo" src="img/fondo2.jpg">
+            <img id="fond" src="img/fondo.jpg">
+        </aside>
+        
+        <!--<footer id="footer">
+            <p>&copy;MAFAC</p>
+        </footer>-->
+
+    </div>
+</body>
+</html>
